@@ -3,14 +3,11 @@ package com.junit;
 
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Fail.fail;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 public class ScoreCollectionTest {
-    @Test
-    public void test(){
-    }
+
     @Test
     public void 산술평균값_구하기(){
         // 준비
@@ -22,6 +19,6 @@ public class ScoreCollectionTest {
         int actualResult = collection.arithmeticMean();
 
         //단언
-        assertThat(actualResult, equalTo(6));
+        assertThat(actualResult, equalTo(4));
     }
 }
